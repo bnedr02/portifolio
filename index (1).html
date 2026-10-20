@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Portfólio de Rafael Dias de Melo — estudante de tecnologia e desenvolvimento web.">
+<title>Rafael Dias de Melo — Portfólio</title>
+<style>
+:root{color-scheme:light dark;--bg:light-dark(#f4f5f1,#101310);--surface:light-dark(#fff,#191d19);--surface2:light-dark(#e9eee6,#222922);--text:light-dark(#1b241c,#edf4e9);--muted:light-dark(#5d6b5e,#aab7a8);--line:light-dark(#d8e0d5,#303a30);--accent:light-dark(#b9f45b,#c2ff68);--ink:light-dark(#192315,#17200f)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}.topbar{position:sticky;top:0;z-index:5;background:light-dark(rgba(244,245,241,.9),rgba(16,19,16,.9));backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font-weight:850;letter-spacing:-.06em;font-size:1.1rem}.brand span{color:light-dark(#638d24,#c2ff68)}.navlinks{display:flex;gap:24px;color:var(--muted);font-size:.9rem}.navlinks a:hover{color:var(--text)}.hero{padding:88px 0 78px;display:grid;grid-template-columns:1.25fr .75fr;gap:54px;align-items:center}.eyebrow{display:inline-flex;gap:10px;align-items:center;border:1px solid var(--line);border-radius:99px;padding:7px 12px;color:var(--muted);font-size:.78rem;text-transform:uppercase;letter-spacing:.12em}.dot{width:8px;height:8px;background:var(--accent);border-radius:50%;box-shadow:0 0 0 4px light-dark(#e6f6d4,#29371f)}h1{font-size:clamp(3rem,7vw,5.7rem);line-height:.98;letter-spacing:-.075em;margin:24px 0}h1 em{font-style:normal;color:light-dark(#638d24,#c2ff68)}.intro{font-size:1.12rem;max-width:590px;color:var(--muted)}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:12px 17px;border-radius:12px;font-weight:750;font-size:.92rem;border:1px solid var(--line);transition:transform .2s,opacity .2s}.btn:hover{transform:translateY(-2px)}.btn.primary{background:var(--accent);color:var(--ink);border-color:transparent}.hero-card{background:var(--surface);border:1px solid var(--line);border-radius:26px;padding:26px;position:relative;overflow:hidden;min-height:330px}.hero-card:before{content:"";position:absolute;width:210px;height:210px;border-radius:50%;background:var(--accent);filter:blur(1px);opacity:.14;right:-55px;top:-70px}.code-window{position:relative;border:1px solid var(--line);border-radius:17px;overflow:hidden;background:light-dark(#f6f8f3,#121612)}.windowbar{display:flex;gap:6px;padding:12px;border-bottom:1px solid var(--line)}.windowbar i{width:8px;height:8px;background:var(--line);border-radius:50%}.code{padding:22px 18px;font: .86rem/2 ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--muted)}.code .green{color:light-dark(#547e19,#c2ff68)}.code .white{color:var(--text)}.card-foot{position:relative;display:flex;justify-content:space-between;gap:12px;margin-top:18px;color:var(--muted);font-size:.8rem}.section{padding:76px 0;border-top:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:30px}.kicker{color:light-dark(#638d24,#c2ff68);font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.15em}.section h2{font-size:clamp(2rem,4vw,3.1rem);letter-spacing:-.06em;line-height:1.1;margin:8px 0 0}.section-head p{max-width:430px;color:var(--muted);margin:0}.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:22px}.about-quote{background:var(--accent);color:var(--ink);border-radius:24px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;min-height:250px}.about-quote strong{font-size:1.7rem;letter-spacing:-.04em;line-height:1.2}.about-quote span{font-size:.82rem;font-weight:750}.about-text{background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:28px;color:var(--muted)}.about-text p:first-child{margin-top:0}.about-text p:last-child{margin-bottom:0}.tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px}.tag{padding:7px 11px;border:1px solid var(--line);border-radius:99px;font-size:.82rem;color:var(--muted)}.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.relato-card[hidden]{display:none}.relato-card .project-body p{white-space:pre-line}.project{background:var(--surface);border:1px solid var(--line);border-radius:22px;overflow:hidden;transition:transform .2s,border-color .2s}.project:hover{transform:translateY(-4px);border-color:light-dark(#a4c67e,#526d38)}.project-art{min-height:190px;padding:22px;background:var(--surface2);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}.project-art:after{content:"";position:absolute;width:240px;height:240px;border:1px solid var(--line);border-radius:50%;right:-80px;bottom:-150px}.mini-browser{width:86%;border:1px solid var(--line);border-radius:12px;background:var(--surface);padding:10px;box-shadow:0 15px 30px #0000000b}.mini-top{display:flex;gap:4px;margin-bottom:9px}.mini-top i{width:5px;height:5px;background:var(--muted);opacity:.55;border-radius:50%}.mini-line{height:7px;background:var(--line);border-radius:9px;margin:7px 0;width:70%}.mini-line.short{width:42%}.mini-pill{height:20px;width:68px;background:var(--accent);border-radius:5px;margin-top:10px}.project-body{padding:22px}.project-meta{display:flex;justify-content:space-between;gap:12px;color:var(--muted);font-size:.78rem}.project h3{margin:10px 0 7px;font-size:1.25rem;letter-spacing:-.03em}.project p{color:var(--muted);margin:0 0 17px;font-size:.94rem}.project-link{font-weight:750;font-size:.87rem}.project-link span{color:light-dark(#638d24,#c2ff68);margin-left:5px}.skills-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.skill{padding:19px;border:1px solid var(--line);border-radius:17px;background:var(--surface)}.skill b{display:block;margin-bottom:4px}.skill span{font-size:.83rem;color:var(--muted)}.contact{background:var(--surface);border:1px solid var(--line);border-radius:26px;padding:clamp(24px,5vw,52px);display:flex;align-items:center;justify-content:space-between;gap:30px}.contact h2{max-width:600px}.contact p{color:var(--muted);max-width:560px}.contact-actions{display:flex;flex-direction:column;gap:10px;min-width:180px}.contact-actions .btn{white-space:nowrap}footer{padding:28px 0;color:var(--muted);font-size:.82rem;display:flex;justify-content:space-between;gap:20px}.note{font-size:.8rem;color:var(--muted);margin-top:18px}
+@media(max-width:760px){.navlinks{gap:12px;font-size:.8rem}.hero{grid-template-columns:1fr;padding:58px 0;gap:28px}.hero-card{min-height:unset}.section{padding:55px 0}.section-head{align-items:start;flex-direction:column}.about-grid,.projects{grid-template-columns:1fr}.skills-grid{grid-template-columns:repeat(2,1fr)}.contact{align-items:start;flex-direction:column}.contact-actions{flex-direction:row;flex-wrap:wrap}footer{flex-direction:column;gap:6px}}
+@media(max-width:430px){.wrap{width:min(100% - 28px,1120px)}nav{min-height:65px}.navlinks{gap:10px}.navlinks a:nth-child(2){display:none}h1{font-size:3.1rem}.skills-grid{grid-template-columns:1fr 1fr}.project-art{min-height:160px}}
+</style>
+</head>
+<body>
+<header class="topbar"><nav class="wrap" aria-label="Navegação principal"><a class="brand" href="#inicio">rafael<span>.</span>dm</a><div class="navlinks"><a href="#sobre">Sobre</a><a href="#projetos">Projetos</a><a href="#relatos">Relatos das aulas</a><a href="#habilidades">Habilidades</a><a href="#contato">Contato</a></div></nav></header>
+<main>
+<section class="hero wrap" id="inicio"><div><div class="eyebrow"><span class="dot"></span> Portfólio acadêmico · Tecnologia</div><h1>Olá, eu sou<br><em>Rafael Dias</em><br>de Melo.</h1><p class="intro">Este é meu espaço para reunir trabalhos da faculdade, exercícios práticos e projetos que mostram minha evolução na área de tecnologia. Cada atividade é uma oportunidade de aprender algo novo e aplicar o conhecimento.</p><div class="actions"><a class="btn primary" href="#projetos">Ver trabalhos acadêmicos <span>↘</span></a><a class="btn" href="#sobre">Conheça minha trajetória ↗</a></div></div>
+<div class="hero-card"><div class="code-window"><div class="windowbar"><i></i><i></i><i></i></div><div class="code"><div><span class="green">const</span> <span class="white">desenvolvedor</span> = {</div><div>&nbsp;&nbsp;nome: <span class="green">"Rafael Dias de Melo"</span>,</div><div>&nbsp;&nbsp;foco: <span class="green">"Desenvolvimento web"</span>,</div><div>&nbsp;&nbsp;mentalidade: <span class="green">"Aprender fazendo"</span>,</div><div>&nbsp;&nbsp;status: <span class="green">"Em evolução"</span></div><div>};</div></div></div><div class="card-foot"><span>IDEIAS → INTERFACES</span><span>01 / 04</span></div></div></section>
+<section class="section" id="sobre"><div class="wrap"><div class="section-head"><div><div class="kicker">01 — Sobre mim</div><h2>Aprender na prática.<br>Evoluir a cada trabalho.</h2></div><p>Minha trajetória acadêmica, os assuntos que estudo e as atividades que ajudam a transformar teoria em experiência.</p></div><div class="about-grid"><div class="about-quote"><strong>“Cada trabalho é uma chance de entender melhor, testar ideias e melhorar o que sei fazer.”</strong><span>MEU CAMINHO NA TECNOLOGIA</span></div><div class="about-text"><p>Sou estudante de tecnologia e utilizo este portfólio para organizar e apresentar trabalhos desenvolvidos durante a faculdade. Aqui quero mostrar não apenas o resultado final, mas também os conhecimentos e as ferramentas usados em cada atividade.</p><p>Tenho estudado programação, banco de dados, desenvolvimento web e fundamentos de tecnologia. Ao longo do curso, pretendo atualizar esta página com novos trabalhos, aprendizados e projetos, registrando minha evolução acadêmica.</p><div class="tags"><span class="tag">Trabalhos da faculdade</span><span class="tag">Programação</span><span class="tag">Banco de dados</span><span class="tag">Desenvolvimento web</span></div></div></div></div></section>
+<section class="section" id="projetos"><div class="wrap"><div class="section-head"><div><div class="kicker">02 — Trabalhos acadêmicos</div><h2>Teoria aplicada.<br>Conhecimento em construção.</h2></div><p>Uma seleção de atividades e projetos realizados durante os estudos. As descrições podem ser complementadas com imagens, repositórios e detalhes do que foi aprendido em cada trabalho.</p></div><div class="projects">
+<article class="project"><div class="project-art"><div class="mini-browser"><div class="mini-top"><i></i><i></i><i></i></div><div class="mini-line short"></div><div class="mini-line"></div><div class="mini-line" style="width:56%"></div><div class="mini-pill"></div></div></div><div class="project-body"><div class="project-meta"><span>01 / DESENVOLVIMENTO WEB</span><span>HTML · CSS</span></div><h3>Site institucional: Casa das Baterias & LM Terraplanagem</h3><p>Proposta de página para apresentar duas áreas de atuação, organizar informações e facilitar o acesso aos contatos da empresa. Um exercício de estrutura, estilo e experiência do usuário.</p><a class="project-link" href="#contato">Detalhes do trabalho <span>↗</span></a></div></article>
+<article class="project"><div class="project-art"><div class="mini-browser"><div class="mini-top"><i></i><i></i><i></i></div><div style="display:flex;gap:8px;margin-top:14px"><div style="height:62px;flex:1;background:var(--surface2);border-radius:6px;border:1px solid var(--line)"></div><div style="height:62px;flex:1;background:var(--surface2);border-radius:6px;border:1px solid var(--line)"></div><div style="height:62px;flex:1;background:var(--surface2);border-radius:6px;border:1px solid var(--line)"></div></div><div class="mini-line" style="width:48%;margin-top:13px"></div></div></div><div class="project-body"><div class="project-meta"><span>02 / SISTEMAS DE INFORMAÇÃO</span><span>ASP.NET MVC</span></div><h3>Sistema de gerenciamento de carros</h3><p>Projeto acadêmico para organizar dados de carros e fabricantes, praticando listagem, edição de registros e organização de informações em uma aplicação web.</p><a class="project-link" href="#contato">Detalhes do trabalho <span>↗</span></a></div></article>
+</div><p class="note">Dica: quando tiver os projetos publicados, substitua estas descrições por capturas de tela, tecnologias realmente utilizadas e links para demonstração ou repositório.</p></div></section>
+<section class="section" id="relatos"><div class="wrap"><div class="section-head"><div><div class="kicker">03 — Diário acadêmico</div><h2>Relatos dos dias de aula.</h2></div><p>Registro das atividades, conteúdos e aprendizados de fevereiro a agosto. As datas sem relato correspondem a dias sem aula, conforme informado.</p></div><div style="display:flex;gap:12px;flex-wrap:wrap;margin:0 0 20px;align-items:center"><input id="busca-relatos" type="search" placeholder="Buscar por data ou conteúdo..." aria-label="Buscar relatos" style="flex:1;min-width:220px;padding:13px 15px;border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--text);font:inherit"><span id="contador-relatos" style="color:var(--muted);font-size:.88rem"></span></div><div class="projects" id="relatos-list"></div><p class="note">Os dias sem aula não recebem um relato inventado. Os registros foram mantidos com base nas anotações fornecidas; confira datas repetidas e complete trechos que tenham ficado incompletos antes de publicar.</p></div></section>
+<section class="section" id="habilidades"><div class="wrap"><div class="section-head"><div><div class="kicker">04 — Conhecimentos</div><h2>Minha caixa de ferramentas.</h2></div><p>Conhecimentos em desenvolvimento e tecnologia que venho praticando durante os estudos.</p></div><div class="skills-grid"><div class="skill"><b>HTML & CSS</b><span>Estrutura e apresentação de páginas</span></div><div class="skill"><b>C</b><span>Lógica e estruturas de dados</span></div><div class="skill"><b>SQL</b><span>Consultas e modelagem de dados</span></div><div class="skill"><b>ASP.NET MVC</b><span>Estudos de aplicações web</span></div><div class="skill"><b>Git & GitHub</b><span>Versionamento de projetos</span></div><div class="skill"><b>Banco de dados</b><span>Relacionamentos e operações</span></div><div class="skill"><b>Cloud</b><span>Fundamentos de computação em nuvem</span></div><div class="skill"><b>Aprender sempre</b><span>Prática, pesquisa e melhoria contínua</span></div></div></div></section>
+<section class="section" id="contato"><div class="wrap"><div class="contact"><div><div class="kicker">05 — Contato</div><h2>Vamos trocar conhecimento?</h2><p>Este portfólio reúne minha caminhada acadêmica e os projetos que desenvolvo durante o curso. Você pode entrar em contato para conversar sobre trabalhos, ideias ou experiências na área de tecnologia.</p></div><div class="contact-actions"><a class="btn primary" href="mailto:seuemail@exemplo.com">Enviar e-mail ↗</a><a class="btn" href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a><a class="btn" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div></div><p class="note">Antes de publicar, substitua o e-mail de exemplo e os links genéricos pelos seus canais reais.</p></div></section>
+</main><footer class="wrap"><span>© 2026 Rafael Dias de Melo</span><span>Construído com intenção, curiosidade e código.</span></footer>
+<script>
+const relatosAulas = [
+  [
+    "10/02",
+    "Essa aula foi usada para começar a fazer o portfólio, e conhecer o Wix, além de iniciar as discussões do projeto integrador, para mais à frente apresentar as ideias, e depois continuar o projeto em si."
+  ],
+  [
+    "11, 12 e 13/02",
+    "As aulas de quarta foram tranquilas, tive aula do professor André que deu aula na ETEC, e aula de gestão ágil. No dia 12 eu faltei nas duas primeiras aulas, mas as aulas seguintes foram sobre o projeto integrador e estrutura de dados (string, int, boolean). No dia 13, sexta-feira, também foram importantes, como relembrar peças de computador e um pouco de sistema operacional, mais duas de estrutura de dados, e por fim duas aulas de inteligência corporativa que foram boas para se apresentar e conversar com o professor sobre os projetos."
+  ],
+  [
+    "19/02",
+    "As primeiras aulas de banco de dados foram para revisão dos códigos, logo após foram 3 aulas voltadas para continuar a pensar em ideias para apresentação dos temas do projeto integrador, para finalizar uma última aula de estrutura de dados que revisou os operadores <, >, !=, entre outros, além de citar o if, else, for, while."
+  ],
+  [
+    "20/02",
+    "As duas primeiras aulas foram sobre memória RAM, cache, virtualização de RAM, hits, misses, mapeamentos, clock, e outros. Logo após aula de estrutura de dados onde há uma tarefa para instalar o compilador C. Nas últimas aulas de inteligência corporativa o professor passou um trabalho para iniciar com pontos principais de produto, oferta, necessidade, desejo e demanda."
+  ],
+  [
+    "23/02",
+    "As primeiras aulas foram para a introdução da disciplina humano e computador, conceitos e características além de exemplos, e relembrar conceitos já apresentados na ETEC. Em seguida duas aulas de matemática discreta, onde foi falado sobre negações, princípios, tabela verdade, e mexer um pouco com Python. Na penúltima aula o meu grupo apresentou as ideias do projeto integrador, e decidimos continuar a ideia de prestação de serviços. A última aula foi para dar sequência nos laços de repetição e fazer atividades."
+  ],
+  [
+    "24/02",
+    "As duas primeiras aulas de projeto integrador foram voltadas para os demais grupos continuarem a apresentação dos seus temas. Após o intervalo mais duas aulas de inglês, para introdução ao que será estudado. Para finalizar, as últimas aulas foram para sequência das apresentações e foi passado um trabalho mais técnico para ser realizado."
+  ],
+  [
+    "25/02",
+    "As primeiras aulas foram para o projeto no Visual Studio, onde foi possível dar continuidade. Após, aulas de mobile onde começamos o projeto de biscoito da sorte, em que a pessoa clica no botão e aparece uma frase diferente. Para finalizar, aulas de organização de computadores e sistemas operacionais, onde foram explicados conceitos de memória cache e registradores."
+  ],
+  [
+    "26/02",
+    "Começamos o dia com duas aulas relacionadas ao pgAdmin, onde fizemos revisões e algumas atividades. Depois aulas de engenharia de software, onde foram para introdução da disciplina, além de uma aula de projeto integrador. Por fim uma aula de estrutura de dados."
+  ],
+  [
+    "27/02",
+    "As primeiras aulas foram para falar de atividades aritméticas e lógicas, dispositivos de entrada, saída e barramentos. Na aula de estrutura de dados fizemos exercícios, e enviamos para o professor. As últimas aulas foram para elaborar o trabalho relacionado a empresas."
+  ],
+  [
+    "02/03",
+    "As aulas começaram com um trabalho para analisar o TCC de outra pessoa e apresentar em slides em outra aula. Em matemática discreta fizemos alguns exercícios de sentenças A, B, C e tarefa adicionando D. Depois foi uma aula para continuar os slides do projeto integrador, e a última de estrutura de dados foram outros exercícios com switch, e if de um jeito diferente."
+  ],
+  [
+    "03/03",
+    "As aulas iniciais de projeto integrador foram para falar de Git e GitHub, e começar a conhecer sobre. Após, teve uma peça teatral, e em sequência uma aula de inglês para começar o conteúdo, no final duas aulas de engenharia de software sobre processos de software."
+  ],
+  [
+    "04/03",
+    "O dia começou com duas aulas voltadas ao Visual Studio 2022, onde tivemos de reorganizar o projeto para dar sequência nas próximas oportunidades. Em seguida, outro ensino para continuidade do projeto biscoito e início de animações da disciplina de aplicativos móveis. No final mais duas aulas do professor Alexandre, que irá ministrar também a matéria de metodologias ágeis."
+  ],
+  [
+    "05/03",
+    "As primeiras aulas foram de banco de dados, onde fizemos exercícios de INNER JOIN, LEFT, RIGHT e FULL JOIN. Depois aulas para dar sequência no projeto integrador e engenharia de software, falando sobre UML. Por último aula do professor Cristiano, onde ele fez correção dos exercícios passados."
+  ],
+  [
+    "06/03",
+    "O dia começou com a disciplina de sistema operacional, onde o professor falou sobre as gerações de computadores, e passou um seminário. Após teve aula de estrutura de dados, onde tivemos a missão de fazer um exercício complexo. E no final, aulas para continuar o projeto de seminário do professor Mitsuru."
+  ],
+  [
+    "09/03",
+    "As aulas de Interação Humano-Computador foram para elaborar a apresentação da experiência de usuário dos TCCs de outras pessoas. Depois na aula de matemática discreta fizemos a correção da tarefa, e exercícios. Na aula do projeto integrador, demos sequência nos slides, pesquisa Word e modelação do sistema. No final uma aula de estrutura de dados, onde ele falou de função, e matriz."
+  ],
+  [
+    "10/03",
+    "Na aula de projeto integrador mexemos com o Git, e fizemos algumas configurações para utilizá-lo, além de usar alguns códigos para criar, ver, e comitar as coisas. Na aula de inglês fizemos alguns exercícios para dar continuidade na matéria. Depois na aula de engenharia de software, foi bem explicado sobre os requisitos, trazendo vários aspectos para entender, além da importância da documentação em um projeto, e também falou do triângulo escopo, tempo e custo."
+  ],
+  [
+    "11/03",
+    "Nas aulas de programação web corrigimos os erros, e vimos a versão web de como está, o professor também falou para criarmos o projeto de novo, porém com o tema biblioteca, para treinarmos o assunto. Na aula de programação mobile fizemos mais alguns projetos de animação. A aula foi interrompida para apresentar o novo regulamento da Fatec geral de cursos e graduação."
+  ],
+  [
+    "12/03",
+    "As primeiras foram de banco de dados, onde fizemos mais exercícios, e o professor Alexandre passou uma lista para fazer e trazer na próxima aula, e falou sobre subconsultas. Depois assistimos ao filme Downfall: The Case Against Boeing, para elaborarmos uma documentação sobre o que aconteceu com fins de trabalhos acadêmicos. Na aula de estrutura de dados o professor passou mais sobre funções."
+  ],
+  [
+    "13/03",
+    "Nas aulas do professor Wellington todos os grupos conseguiram terminar de apresentar os trabalhos sobre gerações computacionais. Em seguida estrutura de dados, onde fizemos uma lista de exercícios, e temos que terminá-la, para mandar ao professor Cristiano. Por fim a disciplina de inteligência corporativa, que terminamos os slides e a documentação e enviamos para o professor Mitsuru."
+  ],
+  [
+    "16/03",
+    "Na aula de Interação Humano-Computador continuamos a elaboração dos slides sobre o TCC, e praticamente finalizamos para apresentar na próxima aula. Na aula de matemática discreta vimos sobre condicionais: implicação e equivalência. Em projeto integrador foram apresentadas a sequência do projeto de forma pitch. Depois em estrutura de dados, o professor pediu para enviarmos as atividades e falou sobre vetor."
+  ],
+  [
+    "17/03",
+    "Nas aulas iniciais dois grupos terminaram de apresentar os slides do projeto integrador, e fizemos alguns códigos no Git Bash. Depois na aula de inglês aprendemos o abecedário e praticamos o spell (soletrar). Por fim nas aulas de engenharia de software demos sequência ao relatório sobre o filme Downfall: The Case Against Boeing."
+  ],
+  [
+    "18/03",
+    "Nas primeiras disciplinas demos continuidade ao projeto do professor Wellington, onde estilizamos e fizemos outras coisas. Na aula de mobile começamos um projeto de App Navegação Tabs. Em gestão ágil fizemos uma dinâmica com desenhos, e o professor deu continuidade na matéria."
+  ],
+  [
+    "19/03",
+    "Na matéria do professor Alexandre corrigimos algumas atividades, e começamos a ver views em banco de dados. Nas aulas do professor Jeferson ele deixou fazermos os slides e pesquisas referentes às atividades que ele propôs. O professor Cristiano começou a falar sobre vetores."
+  ],
+  [
+    "20/03",
+    "Nas aulas de SO o professor falou sobre a ULA (unidade aritmética e lógica), falou sobre os registradores de entrada, operação, saída, entre outros, sendo controlado pelo ciclo de clock, e deu uma atividade referente à matéria passada na aula. Em estrutura de dados observamos mais sobre vetores, e exemplos de como usar. Nas aulas de inteligência corporativa alguns grupos apresentaram seus trabalhos e os outros apresentarão na próxima semana, e passou uma próxima etapa para o trabalho."
+  ],
+  [
+    "23/03",
+    "Nas aulas de Interação Humano-Computador, os grupos apresentaram suas análises sobre os outros TCCs, e o meu grupo falou sobre o SaberEtec (gerenciamento de biblioteca), e o ControlTec (gerenciamento de laboratórios). Nas aulas de matemática discreta o professor passou alguns exercícios para irmos fazendo. No projeto integrador continuamos a elaborar o modelo técnico de apresentação. E em estrutura de dados fizemos um exercício mais complexo sobre vetores."
+  ],
+  [
+    "24/03",
+    "No começo do dia nas aulas de projeto integrador, continuamos no projeto do Git, e o professor passou um trabalho do assunto, onde você tem que seguir os passos e registrar, podendo ser feito em sala de aula. Depois nas aulas de inglês o tema foi relacionado a titles (pronomes de tratamento). E no final a disciplina de engenharia de software, que o professor Jeferson deu mais um trabalho para darmos sequência, esse relacionado a diagramas de atores e casos de uso, para já ajudar no projeto integrador."
+  ],
+  [
+    "25/03",
+    "Nas aulas do professor Wellington continuamos o projeto, ele passou o trabalho mas com o tema carros. Em programação mobile, o professor André deu continuidade no projeto de navegação. O professor Alexandre passou a aula dele e deu alguns temas, onde a gente tinha que pesquisar e responder o termo, e pesquisar o do grupo do lado, assim dinamizando a aula."
+  ],
+  [
+    "26/03",
+    "Nas aulas do professor Alexandre fizemos exercícios sobre views para dar continuidade na matéria, e ele depois passou uma lista de questões para fazermos usando a view. Nas aulas do professor Jeferson continuamos as atividades da aula dele, e após teve uma palestra com um antigo aluno da Fatec."
+  ],
+  [
+    "27/03",
+    "As aulas de sistema operacional o professor continuou a última matéria para a prova. Na aula de estrutura de dados o professor Cristiano continuou explicando sobre vetores, retornou no exercício da aula passada e os explicou de forma detalhada, para entendermos melhor. Em inteligência corporativa, apresentamos nosso trabalho de vestuário da empresa Chanel, e os demais grupos apresentaram os seus."
+  ],
+  [
+    "30/03",
+    "Nas aulas da professora Lígia alguns outros grupos apresentaram seus trabalhos, e os outros apresentarão semana que vem. Nas aulas de matemática discreta o professor faltou, porém ele deixou a atividade para darmos sequência. Na aula de projeto integrador eu comecei a fazer o trabalho do Git e quase acabei. Na aula de estrutura de dados fizemos mais exercícios sobre vetores."
+  ],
+  [
+    "31/03",
+    "Nas primeiras aulas eu terminei o trabalho do Git, e entreguei. Após o intervalo ocorreu a aula de inglês, onde falamos do verbo To Be. As últimas aulas do professor Jeferson ele deixou fazermos o trabalho de diagramas."
+  ],
+  [
+    "01/04",
+    "Nas aulas de técnicas de programação avançada começamos um projeto N-N. Na aula do professor André iniciamos um projeto de navegação browser. Nas últimas aulas de gestão ágil o professor Alexandre continuou sua matéria."
+  ],
+  [
+    "02/04",
+    "Nas aulas do professor Alexandre, ele passou e corrigiu algumas atividades. As aulas do professor Jeferson foram para continuar os trabalhos que ele mandou, e na aula do professor Cristiano ele corrigiu as atividades e, para quem estava aqui, pediu para entregar valendo ponto."
+  ],
+  [
+    "06/04",
+    "Nas aulas de Interação Humano-Computador, os grupos acabaram de apresentar as suas avaliações de outros TCCs. Em matemática discreta o professor postou a atividade para entregarmos, e começou a falar sobre teoria de conjuntos. Na aula do professor Jeferson ele deixou continuar os seus trabalhos, e na aula de estrutura de dados o professor deu um exercício para fazermos."
+  ],
+  [
+    "07/04",
+    "As aulas do professor Jeferson foram para dar sequência nos trabalhos propostos por ele. Depois do intervalo, nas aulas de inglês o professor passou matéria referente a números e despedidas, além de falar sobre a data da prova e trabalho em dupla de inglês. As últimas aulas do professor Jeferson novamente foram voltadas para continuar os trabalhos dele."
+  ],
+  [
+    "08/04",
+    "O professor Wellington faltou, então as primeiras aulas foram do Jeferson, onde ele novamente deixou continuarmos o trabalho dele que é extenso, e é para entregar semana que vem dia 15. Nas aulas do professor André ele continuou a sua matéria no site por navegação drawer. As últimas aulas seriam do professor Alexandre, mas ele também faltou, então tivemos mais duas aulas do Jeferson para continuar o trabalho dele."
+  ],
+  [
+    "09/04",
+    "Hoje nas aulas de banco de dados, do professor Alexandre, ele passou o trabalho dele para começarmos, e disse que poderemos continuar na próxima aula. As 3 aulas do professor Jeferson de hoje foram boas para continuarmos o projeto dos diagramas que ele pediu, e quase terminar a documentação. Em estrutura de dados o Cristiano falou sobre matriz e como funciona, exemplificando como um cubo."
+  ],
+  [
+    "10/04",
+    "Hoje fizemos a prova do professor Wellington voltada mais à parte de hardware do computador. Nas aulas do professor Cristiano ele continuou falando sobre matriz e passou um exercício, no meio da aula dele um pessoal da Fundação IOCHPE conversou com a gente e fez uma atividade conosco. Na aula do professor Mitsuru ele passou um outro trabalho com relação ao projeto integrador."
+  ],
+  [
+    "13/04",
+    "Nas aulas da professora Lígia o último grupo apresentou seu trabalho, e tentamos criar a conta no Figma. Na aula de matemática discreta o professor falou um pouco sobre teoria de conjuntos, depois tivemos uma palestra sobre neurodivergência. E no final uma aula de estrutura de dados onde o professor falou sobre struct."
+  ],
+  [
+    "14/04",
+    "Nas primeiras aulas do professor Jeferson quase finalizamos o projeto. Depois do intervalo tivemos aula de inglês, onde o professor deu a primeira prova sobre os assuntos da matéria, e falou que a próxima aula será para fazer o trabalho de inglês usando dicionário. Nas últimas aulas do professor Jeferson, conseguimos terminar e enviar o trabalho dele."
+  ],
+  [
+    "16/04",
+    "As primeiras aulas foram de banco de dados, ministradas pelo professor Alexandre, onde ele deu as aulas para continuarmos o trabalho que ele propôs, eu consegui terminar, só falta ele postar a atividade para eu mandar. Nas aulas do professor Jeferson, ele ensinou a como linkar o projeto Git com o GitHub e passou um trabalho de assistir uma playlist em inglês de criação de site, e guardar no repositório GitHub para mandar para ele. A última aula foi de estrutura de dados; o professor falou sobre ponteiro."
+  ],
+  [
+    "17/04",
+    "Começamos com as aulas do professor Wellington, onde ele falou sobre registradores, para finalizar a parte de hardware, e no final da aula deixou nós continuarmos o trabalho dele no Visual Studio 2022. Nas aulas de estrutura de dados, o professor passou uma lista de exercícios de vetores e matriz, para fazermos e depois entregar, além disso também postou o material no Classroom para estudarmos para a prova semana que vem. Nas últimas aulas do professor Mitsuru ele deixou fazermos uma outra parte do trabalho escrito sobre relato do sistema que estamos fazendo na aula de projeto integrador, e quais as necessidades ou problemas que o nosso trabalho vai resolver."
+  ],
+  [
+    "22/04",
+    "Nas primeiras aulas do professor Wellington apresentamos o trabalho dele. Nas aulas de mobile começamos a fazer um projeto baseado em uma empresa que queríamos. Nas aulas do professor Alexandre ele passou uma atividade para lermos e definirmos qual frase se encaixava com determinado texto, e falou sobre a matéria."
+  ],
+  [
+    "23/04",
+    "As primeiras aulas foram para fazer a prova de banco de dados do professor Alexandre. Depois as 3 aulas do professor Jeferson foram para continuar o projeto de assistir os vídeos e fazer o sistema. Na última aula do professor Cristiano ele falou sobre os estudos, e também para nos preparar para a prova, ele disse para não ter medo, e focar em estudar, também falou sobre coisas que aconteceram na vida dele referentes a esses assuntos, dizendo que temos que continuar em frente."
+  ],
+  [
+    "24/04",
+    "Nas aulas iniciais vimos a correção da prova do professor Wellington, eu tirei 9, mas tenho que estudar mais para aprender mais. Depois na aula de estrutura de dados teve prova e eu tentei terminar mas não consegui, porém entreguei do jeito que fiz. Nas duas últimas de inteligência corporativa o professor deixou continuarmos a elaborar o trabalho de visão geral do projeto integrador, e pesquisamos sobre startups."
+  ],
+  [
+    "27/04",
+    "Nas aulas de Interação Humano-Computador alguns alunos conseguiram terminar seus logins no Figma, mas eu não consegui ainda, apareceu uma mensagem de muitas tentativas e a professora falou para eu tentar depois de 24 horas. Depois em matemática discreta, o professor Junior continuou a falar de teoria de conjuntos, interseção, união, entre outros. Na aula do professor Jeferson ele deixou continuar o projeto do curso. Na aula de estrutura de dados, o professor falou sobre a prova."
+  ],
+  [
+    "28/04",
+    "Nas aulas iniciais de gestão ágil de projetos, o professor Alexandre falou sobre alguns pilares do Scrum: Transparência, Inspeção e Adaptação. Depois, na aula de inglês fizemos um trabalho em dupla valendo nota, e podendo usar o dicionário. Nas últimas aulas o professor Willian veio falar de uns cursos disponibilizados pela Fatec junto a grandes empresas, como IBM, AWS, CISCO, entre outras, dizendo que é um bom caminho para se seguir, e já entrar bem com um certificado no mercado de trabalho. Depois dele o Thiago deu uma palestra sobre como funciona o mercado, como se adequar a mudanças, citando as empresas em que atua, e deixando bem claro que não é só código: tem que ser comunicativo, respeitoso, participante, entre outros."
+  ],
+  [
+    "29/04",
+    "Nas primeiras aulas do professor Wellington ele recomeçou o projeto CRUD N-N para todos estarem juntos no código. Nas aulas de mobile o professor André deixou continuar o trabalho dele. Na aula de gestão ágil do professor Alexandre ele continuou explicando sobre o Scrum."
+  ],
+  [
+    "30/04",
+    "Nas primeiras aulas de banco de dados o professor Alexandre começou a falar de Procedures e Functions. Nas 3 aulas do professor Jeferson ele deixou continuar o projeto, eu estou no vídeo 10, estava funcionando, porém parou de funcionar, mas eu vou tentar arrumar, pois ele disse que vai aumentar o prazo de entrega. Na aula de estrutura de dados, o professor fez uma revisão da prova."
+  ],
+  [
+    "04/05",
+    "As aulas de Interação Humano-Computador foram para tentar finalizar o login no Figma como estudante, eu e outras pessoas não conseguimos, e a professora falou para mandarmos um e-mail para ela com a declaração de matrícula, para ela ver se consegue arrumar, mas mesmo assim depois ela começou a explicar algumas coisas do Figma. Na aula de matemática discreta o professor começou a falar de análise combinatória, e… [o texto enviado termina neste ponto]."
+  ],
+  [
+    "05/05",
+    "Nas primeiras aulas de professor Jeferson foram para ele voltar ao assunto de diagramas, onde ele deu um geral em vários diagramas, e destacou o de classes que será o próximo passo no projeto integrador. Na aula de inglês o professor mostrou a prova e o trabalho dele e continuou sua matéria. As últimas aulas do Jeferson foram para continuar o projeto dele."
+  ],
+  [
+    "06/05",
+    "Nas aulas do professor Wellington continuamos o trabalho dele, e ele corrigiu o de quem estava errado. \n\nna aula do professor André, entregamos o trabalho, e começamos outro com o banco de dados Supabase. Na aula do professor Alexandre ele trouxe o Augusto que trabalha na Precisão Sistemas, para uma palestra e trazer um bate papo geral."
+  ],
+  [
+    "07/05",
+    "Nas aulas do professor Alexandre, ele continuou a matéria de funções no banco de dados e deu alguns exercícios para fazermos. Na aula do Jeferson ele começou falando da parte dos diagramas, continuando a matéria e depois deixou continuarmos o trabalho dele. Na aula do Cristino ele corrigiu os exercícios da prova e começou a falar de complexidade de algoritmos (Big-O)."
+  ],
+  [
+    "08/05",
+    "Nas primeiras aula do professor Wellington, ele começou a falar de sistemas operacionais, dando uma visão geral sobre o tema, e mostrando exemplos dele. Depois, na aula do professor Cristiano ele continuou a matéria da aula passada com exemplos de como funciona, mostrando na lousa e na TV. Na aula do Mitsuru ele propôs uma outra atividade para adequarmos o nosso projeto integrador ao Canvas modelo de negócio."
+  ],
+  [
+    "11/05",
+    "As primeiras aulas de Interação Humano Computador da professora Lígia foram para fazer uma atividade no Figma, onde nós tínhamos que seguir os passos e fazer o trabalho. Na aula de matemática discreta o professor Júnior continuou sua matéria falando agora de Análise Combinatória. Na aula do Jeferson ele deixou continuar o projeto dele. Na aula de estrutura de dados o Cristiano continuou a matéria de estrutura de dados."
+  ],
+  [
+    "12/05",
+    "Nas aulas do professor Jeferson, ele deixou continuar o projeto dele. Nas aulas de inglês o professor falou sobre artigos a e an, e deu uns exercícios para fazermos. As últimas aulas do Jeferson foram para ele explicar como será a prova de engenharia e projeto integrador, e como será aplicada as notas, e depois continuou a falar dos diagramas de classe, para mais a frente continuarmos a documentação."
+  ],
+  [
+    "13/05",
+    "As primeiras aulas do Wellington foram para continuar o projeto Crud N - N. Na aula do professor André ele continuou o projeto de escolas usando o supabase, onde terminamos de criar as policys e configuração para usar no expo. Nas aulas de gestão ágil de software o professor Alexandre seguiu na matéria explicando o Scrum, e deu uma atividade."
+  ],
+  [
+    "14/05",
+    "Nas aulas de bando de dados o professor Alexandre falou mais um pouco de funciton, e passou um trabalho para responder 5 exercícios sobre funções. Depois na matéria do Jeferson ele acabou de falar de diagrama de classes e passou a segunda parte da monografia do projeto integrador referente ao diagrama de classes e banco de dados. a última aula foi do Cristiano, onde ele continuou falando de complexidade de algoritmos."
+  ],
+  [
+    "15/05",
+    "As primeiras aulas do Wellington ele continuou falando de sistema operacional. Na aula de estrutura de dados o professor continuou falando de big-o. Na aula do Mitsuru ele deixou continuar o trabalho dele."
+  ],
+  [
+    "18/05",
+    "Na aula do Alexandre ele começou a explicar um pouco sobre o XP, onde ele passou uns tópicos para pesquisarmos e explica-los e irmos interagindo mais com ele na aula. Depois em matemática discreta o professor Júnior falou de Relações Binárias e Funções Matemáticas, e falou sobre o calendário da matéria dele, e sobre a prova."
+  ],
+  [
+    "20/05",
+    "Nas aulas iniciais do Jeferson continuamos criando as classes do projeto dele. Na aula de inglês o professor continuou a matéria. Depois na outra aula do Jeferson continuamos fazendo o projeto.\nAs aulas do professor Wellington foram para continuar o Crud N - N, onde mudamos algumas coisas e adicionamos para o projeto continuar funcionando. Na aula de mobile, do professor André continuamos o projeto escola Fatec. As últimas aulas foram de Interação Humano Computador, onde a professora mostrou um link para irmos aprendendo sobre o figma, e explicou como funciona o software."
+  ],
+  [
+    "21/05",
+    "As primeiras aulas do Alexandre foram para corrigir o trabalho que ele deu na última aula, além disso ele também falou das atividades que vão ter aqui amanhã. Na aula do Jeferson continuamos o projeto dele, e corrigimos as coisas que estavam erradas. Na aula de estrutura de dados o Cristiano continuou a falar do assunto da aula passada, referente a Lista Encadeada Simples em C, explicando um código e dando exemplos."
+  ],
+  [
+    "22/05",
+    "Nesse dia ocorreu o Ideathon, onde trabalhamos em grupo com estudantes da Etec, para cumprir as atividades propostas pelo evento."
+  ],
+  [
+    "25/05",
+    "As aulas iniciais da professora Lígia, continuamos o aprendizado no Figma, fazendo atividades, e a professora explicando como funcionam os recursos disponíveis. Em matemática discreta o professor continuou a matéria e deu o restante da aula para começarmos o trabalho dele. Na aula do Jeferson ele deixou continuar o trabalho dele. Em estrutura de dados o professor Cristiano ele continuou a matéria."
+  ],
+  [
+    "26/05",
+    "As aulas do Jeferson foram para fazer o trabalho dele. Na aula de inglês o professor continuou a matéria falando de preposições de lugar, explicando com exemplos e exercícios. As últimas aulas do Jeferson também foram para o projeto dele de diagramas."
+  ],
+  [
+    "27/05",
+    "As primeiras aulas do Wellington foram para explicar e passar o trabalho dele. Depois do intervalo ocorreu uma apresentação dos trabalhos do pessoal do ADS, onde assistimos para ter uma ideia de como apresentar. Nas últimas aulas do Alexandre ele continuou falando da matéria dele."
+  ],
+  [
+    "28/05",
+    "Nas aulas do Alexandre ele falou sobre transações em banco de dados e deu alguns exemplos e passou alguns exercícios. Na aula do Jeferson ele deixou continuar o projeto dos diagramas e documentação, além do slide para apresentação. Em banco de dados o professor Cristiano falou sobre Lista linear, continuando na matéria, também falou de fazer códigos eficientes, otimização, citando a memória cache, além de mostrar outas coisas da matéria."
+  ],
+  [
+    "29/05",
+    "As primeiras aulas do Wellington, ele acabou se atrasando e não aplicou a prova, porém ele deixou a aula livre, e eu continuei o projeto dele. Na aula do Cristiano ele falou sobre lista encadeada, vetores, ponteiros, entre outros. Na aula do Mitsuru ele pediu para enviarmos a apresentação como prova da matéria dele."
+  ],
+  [
+    "01/06",
+    "Nas aulas da professora Ligia ela passou uma atividade valendo nota, onde temos que elaborar um protótipo no figma seguindo os tópicos que ela passou. Na aula do Junior ele deixou continuar o trabalho dele. O Jeferson deu a última aula para terminar o trabalho dele, e começar a apresentar na próxima aula. O Cristiano continuou o conteúdo e passou uma atividade."
+  ],
+  [
+    "02/06",
+    "As aulas do Jeferson foram para apresentar o projeto integrador até o presente momento. Na aula de inglês o professor deu prova para fazermos. E por último na aula do Jeferson continuou as apresentações, e ele falou sobre como será a prova."
+  ],
+  [
+    "08/06",
+    "Nas aulas de segunda Começamos com As aulas da professora Lígia, onde terminamos o trabalho. Em matemática discreta fizemos prova. Na aula do Jeferson ele falou como será a prova dele. Na aula do Cristiano ele falou da prova e deu uns exercícios para fazermos para treinar para a prova."
+  ],
+  [
+    "10/06",
+    "Nas primeiras aulas do Jeferson fizemos o trabalho em relação a analisar um enunciado e descobrir qual diagrama devíamos fazer. Na aula de inglês teve o trabalho valendo nota. E nas últimas aulas do Jeferson teve a prova de engenharia de software dele.\n\nAs primeiras aulas do Wellington foram para fazer a prova dele. Na aula do André ele mostrou o resultado da prova dele. Na aula do Alexandre, ele falou sobre as provas trabalhos, como foram os critérios de avaliação, entre outros."
+  ],
+  [
+    "11/06",
+    "As primeiras aulas do Alexandre foram para fazer a prova de banco de dados dele. Depois teve 3 aulas do Jeferson, porém não teve conteúdo pois a matéria dele já acabou por enquanto. A última aula do Cristiano foi para estudar para a prova."
+  ],
+  [
+    "10/06",
+    "As primeiras aulas do Wellington foram para fazer a prova dele. Na aula do André ele mostrou o resultado da prova dele. Na aula do Alexandre, ele falou sobre as provas trabalhos, como foram os critérios de avaliação, entre outros."
+  ],
+  [
+    "04/08",
+    "Hoje voltaram as aulas, as primeiras foram de matemática discreta onde o professor começou o conteúdo dele, depois aulas de interação humano computador, onde a professora explicou como será daqui para frente, em seguida, o Jeferson falou das matérias dele nesse final se ano, e disse do projeto que vamos começar em grupo com a sala, a aula de estrutura de dados, o Cristiano comentou sobre a matéria dele.\n\nAs primeiras aulas do Jeferson foram para reorganizarmos os grupos do projeto integrador, por conta da quantidade máxima de pessoas por grupo, e decidirmos cada papel de quem irá ficar no outro projeto dele. Na aula de inglês o professor comentou sobre esse semestre que vai começar, depois na outra aula do Jeferson ele deixou continuarmos a decidir sobre os grupos do projeto integrador."
+  ],
+  [
+    "05/08",
+    "Nas aulas do Wellington de programação, ele falou sobre o Swegger, funcionamento e como vamos usa-lo nas aulas. Na aula de programação mobile, continuamos o projeto do último semestre escola Fatec. Na aula do Alexandre ele passou uma atividade para elaborarmos um currículo e simular uma entrevista de emprego daqui uns dias, para termos uma noção de como funciona."
+  ],
+  [
+    "06/08",
+    "Nas aulas iniciais do Alexandre, ele deixou continuarmos a elaborar o currículo e os vídeo da atividade que ele propôs, nas aulas do Jeferson continuamos a elaborar as ideias da aula, e ele mostrou o repositório que vamos trabalhar no projeto em grupo, por último a aula do Cristiano, foi para dar uma revisada no conteúdo, ele falou sobre function."
+  ],
+  [
+    "07/08",
+    "Na aula do Wellington ele começou a matéria desse semestre dele sobre processos e gerenciamentos de processos. Na aula do Cristiano, ele continuou a revisão com um exercício geral, e parou em ponteiros, na aula do Mitsuru ele disse para fazermos uma pesquisa referente a fintech e adicionarmos ao trabalho do semestre passado."
+  ],
+  [
+    "10/08",
+    "Nas aulas de matemática discreta o Júnior continuou o conteúdo dele e deu uns exemplos, atividades e tarefa no python para estudarmos mais. Na aula da Lígia colocamos o trabalho do semestre passado no fatecloud e ela pediu para arrumarmos os erros e a navegação e mandarmos para ela. Na aula do Jeferson ele continuou elaborando o projeto para começarmos a fezer depois. Em estrutura de dados o Cristiano continuou a revisão da aula passada com exemplos."
+  ],
+  [
+    "11/08",
+    "Nas aulas do Jeferson ele falou para irmos tendo ideias do que melhorar e implementar no sistema, na aula de inglês o professor falou sobre países nacionalidades, línguas faladas no país, e como aplicar isso em respostas completas em inglês, e depois as outras aulas do Jeferson também foram para o projeto."
+  ],
+  [
+    "12/08",
+    "As aulas do Wellington foram para começar um projeto de criar uma Api, na aula do André continuamos o projeto escola Fatec, onde mexemos nas páginas escolaform, escolalist. A aula do Alexandre foi para revisar a matéria de antes das férias."
+  ],
+  [
+    "13/08",
+    "Na aula de banco de dados, o professor começou a matéria de triggers. Depois nas aulas do Jeferson, o pessoal apresentou sobre o sistema, e continuamos a pesquisar como funcionava e o que devíamos fazer para continuar o sistema. Na aula de estrutura de dados, o professor continuou a revisão."
+  ],
+  [
+    "14/08",
+    "Na aula de banco de dados, o professor começou a matéria de triggers. Depois nas aulas do Jeferson, o pessoal apresentou sobre o sistema, e continuamos a pesquisar como funcionava e o que devíamos fazer para continuar o sistema. Na aula de estrutura de dados, o professor continuou a revisão."
+  ]
+];
+const listaRelatos = document.getElementById('relatos-list');
+relatosAulas.forEach(([data, relato]) => {
+  const card = document.createElement('article'); card.className = 'project relato-card';
+  const corpo = document.createElement('div'); corpo.className = 'project-body';
+  const meta = document.createElement('div'); meta.className = 'project-meta';
+  const rotulo = document.createElement('span'); rotulo.textContent = 'RELATO DE AULA';
+  const dataEl = document.createElement('span'); dataEl.textContent = data;
+  meta.append(rotulo, dataEl);
+  const titulo = document.createElement('h3'); titulo.textContent = 'Aula — ' + data;
+  const texto = document.createElement('p'); texto.textContent = relato;
+  corpo.append(meta, titulo, texto); card.append(corpo); card.dataset.search = (data + ' ' + relato).toLocaleLowerCase('pt-BR'); listaRelatos.append(card);
+});
+const buscaRelatos = document.getElementById('busca-relatos');
+const contadorRelatos = document.getElementById('contador-relatos');
+function filtrarRelatos(){const termo=buscaRelatos.value.trim().toLocaleLowerCase('pt-BR');let visiveis=0;document.querySelectorAll('.relato-card').forEach(card=>{const mostrar=card.dataset.search.includes(termo);card.hidden=!mostrar;if(mostrar)visiveis++});contadorRelatos.textContent=visiveis+' de '+relatosAulas.length+' relatos';}
+buscaRelatos.addEventListener('input',filtrarRelatos);filtrarRelatos();
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',()=>{const el=document.querySelector(a.getAttribute('href'));if(el)el.setAttribute('tabindex','-1')}));
+</script>
+</body></html>
